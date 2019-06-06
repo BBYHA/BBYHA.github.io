@@ -1,5 +1,11 @@
-title: Dinky theme
-description: Dinky is a red hot theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-dinky
+title: Bloomington Blades Youth Hockey Association
+author: BBYHA
+email: kalanicraig@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Play USA Hockey sanctioned hockey with the Bloomington Blades Youth Hockey Association in Bloomington, Indiana
+
+twitter_username: kalanicraig
+github_username:  kalanicraig
+
+sass:
+    style: compressed

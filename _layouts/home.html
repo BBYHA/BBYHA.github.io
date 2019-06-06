@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+ <div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+   <div class="row center" style="width:auto; text-align:center; padding:20px;">
+	   <img src="/assets/images/BBYHA_Logo.jpg" style="max-width:100%; height:auto;">
+   </div>
+  </div>
+ </div>
+
+ <div class="container">
+  <div class="section">
+
+   <!--  Icon Section  -->
+   <div class="row">
+
+		<div class="col s12 m4">
+		 <div class="icon-block">
+			<h2 class="center red-text text-darken-4"><i class="material-icons">person_add</i></h2>
+			<h5 class="center">Join the team</h5>
+			<ul class="light">
+				<li>About the BBYHA
+				<li>About Our Partners
+				<li>Join the Team
+				<li>Join Our Coaching Staff
+			</ul>
+			<a href="/organization">Parent's guide</a>
+		 </div>
+		</div>
+
+		<div class="col s12 m4">
+		 <div class="icon-block">
+			<h2 class="center red-text text-darken-4"><i class="material-icons">group</i></h2>
+			<h5 class="center">Meet the Teams</h5>
+			<ul class="light">
+				<li>14U (Bantam)
+				<li>12U (Pee Wee)
+				<li>10U (Squirt)
+				<li>8U (Mite)
+				<li>12U Girls
+			</ul>
+			<a href="/teams">Meet our coaches and players</a>
+		 </div>
+		</div>
+
+		<div class="col s12 m4">
+		 <div class="icon-block">
+			<h2 class="center red-text text-darken-4"><i class="material-icons">event_note</i></h2>
+			<h5 class="center">A Year with the Blades</h5>
+
+			<ul class="light">
+				<li><strong>Early August:</strong> Planning party/gear sale
+				<li><strong>Mid August:</strong> 8U-14U team practices start
+				<li><strong>Mid September:</strong> Seeding tournament
+				<li><strong>Late September:</strong> Regular season starts
+				<li><strong>Mid October:</strong> House hockey for 8U/10U starts
+				<li><strong>Late December:</strong> Winter Break
+				<li><strong>Early March:</strong> End of Season
+				<li><strong>Mid March:</strong> Banquet & BBYHA elections
+			</ul>
+			<a href="/calendar">See this season's schedule</a>
+		 </div>
+		</div>
+	</div>
+  </div>
+   
+  </div>
+  <div style="background: #ddd">
+  <div class="container last-post">
+  <section>
+    <h5>Latest Post</h5>
+    <ul class="collection">
+    {% for post in site.posts %}
+    <li class="collection-item avatar">
+     {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+     <div class="date-post">{{ post.date | date: date_format }}</div>
+     <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+     <p>
+       {{ post.content | truncatewords: 10 }}
+     </p>
+     <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+    </li>
+    {% endfor %}
+    </ul> 
+  </section>
+  </div>
+</div>
+
+ </div>
